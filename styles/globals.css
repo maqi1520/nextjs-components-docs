@@ -24,3 +24,21 @@ a {
     background: black;
   }
 }
+
+.demo-block {
+  border: 1px solid rgba(5, 5, 5, 0.06);
+  padding: 24px;
+}
+
+.demo-block-button {
+  padding: 12px;
+  margin: 24px -24px;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+  border-top: 1px solid rgba(5, 5, 5, 0.06);
+  display: flex;
+}
+
+.w-6 {
+  width: 16px;
+  margin-right: 4px;
+}

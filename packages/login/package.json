@@ -1,0 +1,23 @@
+{
+  "name": "@mastack/login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "antd": "^4.24.2",
+    "react": "^18.2.0"
+  },
+  "dependencies": {
+    "@mastack/utils": "workspace:^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
