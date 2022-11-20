@@ -2,50 +2,38 @@ import React, { useState } from "react";
 import {
   GetStaticPathsContext,
   InferGetServerSidePropsType,
-  GetStaticPropsContext
+  GetStaticPropsContext,
 } from "next";
 import dynamic from "next/dynamic";
-import { MDXProvider } from "@mdx-js/react";
-import DemoBlock from "components/DemoBlock";
-
-const components = {
-  DemoBlock
-};
 
 type Props = InferGetServerSidePropsType<typeof getStaticProps>;
 
 export default function Page({ slug }: Props) {
   const Content = dynamic(() => import(`packages/${slug}/docs/index.mdx`), {
-    ssr: false
+    ssr: false,
   });
 
-  return (
-    <div>
-      <MDXProvider components={components}>
-        <Content />
-      </MDXProvider>
-    </div>
-  );
+  return <Content />;
 }
 
 export async function getStaticPaths(context: GetStaticPathsContext) {
   return {
     paths: [
       { params: { slug: ["login"] } },
-      { params: { slug: ["user-select"] } }
+      { params: { slug: ["user-select"] } },
     ],
-    fallback: false // SSG 模式
+    fallback: false, // SSG 模式
   };
 }
 
 export async function getStaticProps({
-  params
+  params,
 }: GetStaticPropsContext<{ slug: string[] }>) {
   const slug = params?.slug.join("/");
 
   return {
     props: {
-      slug
-    } // 传递给组件的props
+      slug,
+    }, // 传递给组件的props
   };
 }

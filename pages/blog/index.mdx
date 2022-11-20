@@ -1,0 +1,25 @@
+# 博客
+
+## 项目初始化
+
+首先我们创建一个 next typescript 作为我们项目的主目录，用于组件库的文档开发
+
+```bash
+npx create-next-app@latest --ts
+```
+
+在项目下新建一个 `pnpm-workspace.yaml`
+
+```
+packages:
+  - 'packages/*'
+```
+
+接下来，我们在 packages 文件夹下创建三个子项目，分别是：user-select、login 和 utils， 对于用户选择，登录 和工具类
+
+```
+├── packages
+│   ├── user-select
+│   ├── login
+│   ├── utils
+```
