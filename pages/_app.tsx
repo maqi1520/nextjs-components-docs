@@ -12,15 +12,9 @@ const components = {
 export default function App({ Component, pageProps }: AppProps & any) {
   return (
     <Layout>
-      {Component.getLayout ? (
-        Component.getLayout(<Component {...pageProps} />)
-      ) : (
-        <div className="prose mx-auto max-w-5xl">
-          <MDXProvider components={components}>
-            <Component {...pageProps} />
-          </MDXProvider>
-        </div>
-      )}
+      <MDXProvider components={components}>
+        <Component {...pageProps} />
+      </MDXProvider>
     </Layout>
   );
 }
