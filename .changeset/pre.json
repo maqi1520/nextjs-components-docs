@@ -1,0 +1,12 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "@mastack/login": "1.0.0",
+    "@mastack/user-select": "1.0.0",
+    "@mastack/utils": "1.0.0"
+  },
+  "changesets": [
+    "clever-shrimps-bow"
+  ]
+}

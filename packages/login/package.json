@@ -1,6 +1,6 @@
 {
   "name": "@mastack/login",
-  "version": "1.0.0",
+  "version": "2.0.0-next.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,7 +15,7 @@
     "react": "^18.2.0"
   },
   "dependencies": {
-    "@mastack/utils": "workspace:^1.0.0"
+    "@mastack/utils": "workspace:^2.0.0-next.0"
   },
   "devDependencies": {
     "typescript": "^4.9.3"
