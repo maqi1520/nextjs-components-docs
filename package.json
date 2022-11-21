@@ -9,7 +9,11 @@
     "lint": "next lint",
     "changeset": "changeset",
     "compile": "pnpm --filter=@mastack/* run build",
-    "version-packages": "changeset version"
+    "version-packages": "changeset version",
+    "pub": "pnpm compile && pnpm --recursive --registry https://registry.npmjs.org/ publish --access public"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.1.5",

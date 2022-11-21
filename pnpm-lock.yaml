@@ -57,7 +57,7 @@ importers:
 
   packages/login:
     specifiers:
-      '@mastack/utils': workspace:^1.0.0
+      '@mastack/utils': workspace:^2.0.0-next.0
       typescript: ^4.9.3
     dependencies:
       '@mastack/utils': link:../utils
