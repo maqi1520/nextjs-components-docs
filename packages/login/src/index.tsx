@@ -19,6 +19,7 @@ export default function Login({ className }: Props) {
         onOk={() => setopen(false)}
       >
         <p>登录弹窗</p>
+        <p>登录弹窗</p>
       </Modal>
     </>
   );

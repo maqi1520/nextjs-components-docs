@@ -9,6 +9,7 @@ export default function UserSelect(props: SelectProps) {
       <Option value="zhangsan">张三</Option>
       <Option value="lisi">李四</Option>
       <Option value="wangwu">王五</Option>
+      <Option value="test">test</Option>
     </Select>
   );
 }
