@@ -12,7 +12,7 @@ export default function Page() {
         使用 Next.js 搭建 Monorepo 组件库文档
       </p>
       <div>
-        <Link href="/docs">
+        <Link href="/docs/user-select">
           <Button type="primary" className="bg-blue-500" size="large">
             快速开始
           </Button>

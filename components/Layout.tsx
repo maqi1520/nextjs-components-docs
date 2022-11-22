@@ -47,7 +47,7 @@ export default function Layout({ children }: Props) {
             </Link>
           </div>
           <div className="flex-none flex items-center py-5 space-x-5 font-medium">
-            <Link href={"/docs"}>文档</Link>
+            <Link href={"/docs/user-select"}>文档</Link>
             <Link href={"/example"}>示例</Link>
             <Link href={"/blog"}>博客</Link>
             <input
